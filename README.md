@@ -7,6 +7,12 @@ Example config your Laravel project with two builds (public and admin)
    ``` sh
    laravel new my-project
    cd my-project
+   
+   copy .env.example -> .env
+   php artisan key:generate
+   
+   composer install
+   assets -> frontend -> app -> yarn install
    # remove existing frontend scaffold
    rm -rf package.json webpack.mix.js yarn.lock resources/js resources/sass public/js public/css
    ```
